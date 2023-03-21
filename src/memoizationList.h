@@ -8,7 +8,8 @@ typedef struct memoizationNode {
 } memoizationNode;
 
 memoizationNode *inicializeNode();
-void addNode(int pos, int num, memoizationNode *node);
+void addNode(int pos, int num, memoizationNode **node);
 void freeMemoizationList(memoizationNode *node);
+int findWithPos(int pos, memoizationNode *node);
 
 #endif
