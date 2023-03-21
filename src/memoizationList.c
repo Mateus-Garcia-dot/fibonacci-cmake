@@ -14,7 +14,6 @@ memoizationNode *inicializeNode() { return NULL; }
 void addNode(int pos, int num, memoizationNode **list) {
   memoizationNode *node = *(list);
   int find = findWithPos(pos, node);
-
   if (find != 0)
     return;
   if (node == NULL) {
